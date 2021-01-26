@@ -1,0 +1,79 @@
+<html>
+<head>
+	<style>
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans");
+* {
+position: relative;
+}
+
+html,
+body {
+margin: 0;
+padding: 0;
+height: 100%;
+}
+
+
+.wrapper1 {
+height: 100%;
+background-color: #fed8b1;
+}
+
+.wave-btn1 {
+color: #ff9933;
+text-decoration: none;
+border: 3px solid #ff9933;
+padding: 5px 30px;
+font-size: 22px;
+font-weight: 600;
+font-family: "Noto Sans";
+line-height: 52px;
+border-radius: 10px;
+position: absolute;
+top: 120px;
+left: 230px;
+transform: translate(-50%, -50%);
+overflow: hidden;
+transition: all 1s;
+}
+
+.wave-btn1:before {
+content: "";
+position: absolute;
+width: 320px;
+height: 320px;
+border-radius: 130px;
+background-color: #ff9933;
+top: 30px;
+left: 50%;
+transform: translate(-50%);
+animation: wave1 5s infinite linear;
+transition: all 1s;
+}
+
+
+
+@keyframes wave1 {
+0% {
+			transform: translate(-50%) rotate(-180deg);
+
+}
+
+
+100% {
+			transform: translate(-50%) rotate(360deg);
+}
+}
+
+
+
+
+	</style>
+</head>
+<body>
+	<div class="wrapper1">
+	<a href="#" class="wave-btn1"><span>orange</span></a>
+	</div>
+
+</body>
+</html>
