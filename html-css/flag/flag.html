@@ -16,13 +16,13 @@ height: 100%;
 /* 1st part */
 .wrapper1 {
 height: 100%;
-background-color: #fed8b1;
+background-color: #000000;
 }
 
 .wave-btn1 {
 color: #ff9933;
 text-decoration: none;
-border: 3px solid #ff9933;
+border: 3px solid #000000;
 padding: 5px 30px;
 font-size: 22px;
 font-weight: 600;
@@ -37,15 +37,19 @@ overflow: hidden;
 transition: all 1s;
 }
 
+.button1 {
+  width: 160px;
+}
+
 .wave-btn1:before {
 content: "";
 position: absolute;
-width: 320px;
-height: 320px;
+width: 340px;
+height: 330px;
 border-radius: 130px;
 background-color: #ff9933;
-top: 30px;
-left: 50%;
+top: 20%;
+left: 40%;
 transform: translate(-50%);
 animation: wave1 5s infinite linear;
 transition: all 1s;
@@ -66,15 +70,11 @@ transition: all 1s;
 }
 
 /* 2nd part */
-.wrapper2 {
-height: 100%;
-background-color: #fed8b1;
-}
 
 .wave-btn2 {
-color: #ffffff;
+color: #00000000;
 text-decoration: none;
-border: 3px solid #ffffff;
+border: 3px solid #000000;
 padding: 5px 30px;
 font-size: 22px;
 font-weight: 600;
@@ -82,7 +82,7 @@ font-family: "Noto Sans";
 line-height: 52px;
 border-radius: 10px;
 position: absolute;
-top: 220px;
+top: 190px;
 left: 230px;
 transform: translate(-50%, -50%);
 overflow: hidden;
@@ -92,11 +92,11 @@ transition: all 1s;
 .wave-btn2:before {
 content: "";
 position: absolute;
-width: 320px;
-height: 320px;
+width: 330px;
+height: 330px;
 border-radius: 130px;
 background-color: #ffffff;
-top: 30px;
+top: 20%;
 left: 50%;
 transform: translate(-50%);
 animation: wave2 5s infinite linear;
@@ -118,15 +118,10 @@ transition: all 1s;
 }
 
 /* 3rd part */
-.wrapper3 {
-height: 100%;
-background-color: #fed8b1;
-}
-
 .wave-btn3 {
-color: #029538;
+color: #00000000;
 text-decoration: none;
-border: 3px solid #029538;
+border: 3px solid #000000;
 padding: 5px 30px;
 font-size: 22px;
 font-weight: 600;
@@ -134,7 +129,7 @@ font-family: "Noto Sans";
 line-height: 52px;
 border-radius: 10px;
 position: absolute;
-top: 320px;
+top: 260px;
 left: 230px;
 transform: translate(-50%, -50%);
 overflow: hidden;
@@ -144,11 +139,11 @@ transition: all 1s;
 .wave-btn3:before {
 content: "";
 position: absolute;
-width: 320px;
-height: 320px;
+width: 330px;
+height: 330px;
 border-radius: 130px;
 background-color: #029538;
-top: 30px;
+top: 30%;
 left: 50%;
 transform: translate(-50%);
 animation: wave3 5s infinite linear;
@@ -169,22 +164,126 @@ transition: all 1s;
 }
 }
 
+/*stand*/
+
+.stand1 {
+	color: #00000000;
+	text-decoration: none;
+	border: 1px solid #ffffff;
+	padding: 1px 1px;
+	font-size: 22px;
+	font-weight: 600;
+	font-family: "Noto Sans";
+	line-height: 52px;
+	border-radius: 10px;
+	position: absolute;
+	margin-top: 30px;
+  top:20%;
+	left:100px;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+	transition: all 1s;
+  height: 300px;
+	}
+	
+	
+	
+	.stand1:before {
+	content: "";
+	position: absolute;
+	width: 340px;
+	height: 330px;
+	border-radius: 130px;
+	background-color: #ffffff;
+	top: 10%;
+	left: 40%;
+	transform: translate(-50%);
+	animation: wave1 5s infinite linear;
+	transition: all 1s;
+	}
+	
+	
+	
+	@keyframes wave1 {
+	0% {
+				transform: translate(-50%) rotate(-180deg);
+	
+	}
+	
+	
+	100% {
+				transform: translate(-50%) rotate(360deg);
+	}
+	}
+
+/*chakra*/
+
+.chakra {
+	color: #0083fd;
+	text-decoration: none;
+	border: 5px solid #0083fd;
+	padding: 0px 0px;
+	font-size: 28px;
+	font-weight: 600;
+	font-family: "Noto Sans";
+	border-radius: 50%;
+	position: absolute;
+	margin-top: 7px;
+  top:20%;
+	left:220px;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+	transition: all 1s;
+  height: 28px;
+  width: 28px;
+  text-align: center;
+  vertical-align: middle;
+	}
+	
+	
+	
+	.chakra:before {
+	content: "";
+	position: absolute;
+	width: 340px;
+	height: 330px;
+	border-radius: 130px;
+	background-color: #ffffff00;
+	top: 20%;
+	left: 40%;
+	transform: translate(-50%);
+	animation: wave1 5s infinite linear;
+	transition: all 1s;
+	}
+	
+	
+	
+	@keyframes wave1 {
+	0% {
+				transform: translate(-50%) rotate(-180deg);
+	
+	}
+	
+	
+	100% {
+				transform: translate(-50%) rotate(360deg);
+	}
+	}
 
 	</style>
 </head>
 <body>
 
 	<div class="wrapper1">
-	<a href="#" class="wave-btn1"><span>orange</span></a>
+  <a href="#" class="wave-btn1 button1"><span>flag</span></a>
+  <a href="#" class="wave-btn2 button1"><span>flag</span></a>
+  <a href="#" class="wave-btn3 button1"><span>flag</span></a>
+  <a href="#" class="stand1"><span>flag</span></a>
+  <a href="#" class="chakra"><span>*</span></a>
+
   </div>
   
-  <div class="wrapper1">
-    <a href="#" class="wave-btn2"><span>white</span></a>
-  </div>
-
-  <div class="wrapper3">
-    <a href="#" class="wave-btn3"><span>green</span></a>
-  </div>
+  
 
 </body>
 </html>
